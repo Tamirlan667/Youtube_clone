@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: white;
+  background-color: #f9f9f9;
   color: black;
   font-family: "Montserrat", sans-serif;
 }
@@ -154,7 +154,7 @@ body {
 #left-side-action > div,
 p {
   padding: 0px 25px;
-  font-size: 14px;
+  font-size: 15px;
 }
 #left-side-action > div:first-child {
   background-color: white;
@@ -166,7 +166,7 @@ p {
 }
 #left-side-hr {
   border: none;
-  border-top: 1px solid #383838;
+  border-top: 1px solid rgb(220, 220, 220);
 }
 #videos-container {
   margin-top: 66px;
@@ -174,7 +174,7 @@ p {
   left: 15%;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 10px 20px 20px 20px;
 }

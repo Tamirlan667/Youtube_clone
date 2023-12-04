@@ -24,7 +24,7 @@ selectSort.addEventListener("change", function () {
   sort(sortData);
 });
 
-//get serach data
+//get search data
 let searchFunc = async (query) => {
   let data = await getData(query);
   displayVideos(data);
@@ -53,7 +53,7 @@ let searchFuncOnLoad = async (query) => {
 //Onload api fetch
 let getDataOnLoad = async (query) => {
   let data = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&regionCode=RU&maxResults=50&q=music&key=AIzaSyAw2PIdftt_HNM6l2tJ0dAMz_z-wuX5g3w`
+    `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&regionCode=RU&maxResults=50&q=shakira&key=AIzaSyAw2PIdftt_HNM6l2tJ0dAMz_z-wuX5g3w`
   );
   let val = await data.json();
   return val.items;
@@ -86,7 +86,7 @@ let displayVideos = (data) => {
   });
 };
 
-// save vide in localStorage
+// save video in localStorage
 let saveVideo = (element) => {
   localStorage.setItem("video", JSON.stringify(element));
   window.location.href = "./video.html";
